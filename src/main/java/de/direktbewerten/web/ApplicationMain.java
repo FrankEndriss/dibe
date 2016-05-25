@@ -1,4 +1,4 @@
-package net.neobp.ticketstack;
+package de.direktbewerten.web;
 
 import java.util.Arrays;
 
