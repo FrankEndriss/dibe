@@ -20,6 +20,23 @@
 	</properties>
 
 	<dependencies>
+<!-- this is needed to use log4j logging, see
+http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-configure-log4j-for-logging
+ -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+			<exclusions><exclusion>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-logging</artifactId>
+			</exclusion></exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+		</dependency>
+<!-- end log4j logging -->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -43,14 +60,7 @@
 			<scope>provided</scope>
 		</dependency>	
 
-	<!--  we want to use JSR-330 @Inject instead of @Autowired -->
-		<dependency>
-			<groupId>javax.inject</groupId>
-			<artifactId>javax.inject</artifactId>
-			<version>1</version>
-		</dependency>
-
-		<!--  we use postgreSQL database -->
+	<!--  we use postgreSQL database -->
 		<dependency>
 			<groupId>postgresql</groupId>
 			<artifactId>postgresql</artifactId>
