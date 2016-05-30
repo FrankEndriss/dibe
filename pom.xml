@@ -37,6 +37,12 @@ http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-confi
 		</dependency>
 <!-- end log4j logging -->
 
+<!-- this dep is taken from tutorial https://spring.io/guides/gs/serving-web-content/  -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -48,10 +54,10 @@ http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto-confi
 		</dependency>
 
 		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
 	<!-- needed for packaging as WAR -->
 		<dependency>

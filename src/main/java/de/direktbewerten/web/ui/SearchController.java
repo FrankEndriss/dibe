@@ -1,5 +1,7 @@
 package de.direktbewerten.web.ui;
 
+import org.apache.log4j.Logger;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping(value = "/")
 public class SearchController {
+	private final static Logger log=Logger.getLogger(SearchController.class);
 
 	/** The landing page.
 	 * @return index.html
 	 */
-	@RequestMapping(value="/index.html", method=RequestMethod.GET)
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String index(Model model) {
-		System.out.println(""+getClass().getName()+".index() was called");
+		log.info(".index() was called");
 		model.addAttribute("username", "Frank");
 		return "index";
 	}
