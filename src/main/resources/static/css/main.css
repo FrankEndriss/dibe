@@ -1,0 +1,520 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+h3 {
+	color: #808080;
+	font-size: 1.1em;
+}
+.small {
+	font-size: 0.8em;
+}
+a {
+	color: #6aa016;
+	text-decoration: none;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p {
+	margin: 0.3em 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+	min-width: 1100px;
+    font-family: 'Magra', sans-serif !important;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+#color1top, #color2top {
+	position: absolute;
+	width:25px;
+	height:25px;
+	left:0;
+}
+#color1top {
+	top:0;
+	background:#6aa016;
+}
+#color2top {
+	top:25px;
+	background:#96d23e;
+}
+#topBox {
+	position: absolute;
+	height:25px;
+	top:0;
+	right: 0;
+	z-index:999;
+}
+#topBox a {
+	color:#6aa016;
+	text-decoration: none;
+	font-size: 0.9em;
+	background: #eef4e5;
+	margin-left: 2px;
+	padding: 0 5px;
+	line-height: 25px;
+    display: inline-block;
+}
+#topBox a small {
+	font-size:0.7em;
+}
+
+.header-container {
+    border-bottom: 16px solid #6aa016;
+	min-height: 170px;
+	    position: relative;
+}
+
+.main aside {
+    border-top: 16px solid #6aa016;
+}
+.footer-container {
+    border-top: 9px solid #6aa016;
+}
+
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: #000;
+	margin: 0 0 0 24px;
+    line-height: 150px;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#login {
+	width: 800px;
+	background: #FFF;
+	-webkit-box-shadow: 0 0 3px 0 #000000;
+	box-shadow: 0 0 3px 0 #000000;
+	position: absolute;
+    right: 0;
+    height: 570px;
+	z-index:9999;
+	display: none;
+}
+form.login {
+	background: #f5f5f5;
+	-webkit-box-shadow: 0 0 3px 0 #707070;
+	box-shadow: 0 0 3px 0 #707070;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 15px;
+}
+form.login label {
+	display: block;
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-bottom: 5px;
+}
+form.login input, form.login select {
+	display: block;
+	margin-bottom: 5px;
+	border: none;
+	-webkit-box-shadow:inset 0 0 3px 0 #707070;
+box-shadow:inset 0 0 3px 0 #707070;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+	width: 100%;
+	outline-color: #6AA016;
+}
+
+form.login input[type=checkbox] {
+	display: inline-block;
+    width: auto;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 0;
+    padding: 15px 0;
+
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #6aa016;
+    background: #FFF;
+}
+nav a span {
+	font-weight: normal;
+	display: block;
+}
+nav li:hover a {
+    color: #FFF;
+    background: #6aa016;
+}
+.filter {
+	line-height: 2em;
+}
+select {
+	width: 65%;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+.filter span {
+	width: 34%;
+	display: inline-block;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.footer-container footer {
+    color: white;
+    padding: 17px 0;
+	background: #262626;
+	padding-bottom: 0;
+	text-align:left;
+}
+.footer-container footer h3 {
+	color: #6aa016;
+	font-size: 1.5em;
+	margin-bottom:0;
+}
+.footer-container footer h4 {
+	margin-top:-3px;
+}
+.footer-container footer .copy {
+	color: #6aa016;
+	line-height:55px;
+	padding-left: 10px;
+    clear: both;
+	background: #3d3d3d;
+	font-weight:bold;
+}
+#drawers {
+	list-style:none;
+}
+#drawers h5 {
+	color: #AAA;
+	font-weight:normal;
+	margin: 10px 0;
+}
+#drawers h5 i {
+	font-size:2em;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#drawers li {
+	font-weight:normal;
+	border-top: 1px solid #333;
+}
+#drawers li div {
+    font-size: 0.8em;
+	padding-left: 31px;
+}
+
+#drawers li:last-child {
+	border-bottom: 1px solid #333;
+}
+
+#drawers div { display:none; }
+#drawers div.first { display:block; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        margin: 0 0;
+        padding: 12px 31px;
+        margin-bottom: 0;
+    }
+	nav li a{
+		background: url(../images/dotsUp.gif) left repeat-y;
+	}
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
