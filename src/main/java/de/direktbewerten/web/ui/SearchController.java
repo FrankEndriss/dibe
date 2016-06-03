@@ -13,9 +13,9 @@ public class SearchController implements ErrorController {
 	private final static Logger log=Logger.getLogger(SearchController.class);
 
 	/** The landing page.
-	 * @return index.html
+	 * @return index
 	 */
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value={ "/", "/index.htm", "index.html" }, method=RequestMethod.GET)
 	public String index(Model model) {
 		log.info(".index() was called");
 		model.addAttribute("username", "Frank");
